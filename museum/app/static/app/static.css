@@ -1,0 +1,6 @@
+body {
+    background-image: url("../museum_images/img1.jpeg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+}

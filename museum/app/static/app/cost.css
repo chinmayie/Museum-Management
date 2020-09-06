@@ -1,0 +1,9 @@
+
+  body{
+            background-color: #cccccc;
+            background-image: url("../museum_images/time.jpg");
+            background-repeat: no-repeat;
+            background-position: right top;
+            background-attachment: fixed;
+            height: 100%
+        }

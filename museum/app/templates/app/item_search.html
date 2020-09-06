@@ -1,0 +1,34 @@
+{% block content %}
+<center><br><br>
+<style type="text/css">
+  body{
+    background-color: #FAFAD2
+  }
+  table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<form method="get">
+    {{ filter.form.as_p}}
+    <button type="submit">Search</button><br><br>
+  </form>
+    <table>
+  <thead>
+    <th>Itemid</th>
+    <th>Description</th>
+    <th>Divid</th>
+    </thead>
+    <tbody>
+  {% for item in filter.qs %}
+  <tr>
+    <td>{{item.itemid}}</td>
+    <td>{{item.description }}</td>
+    <td>{{item.divid}}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</center>
+{% endblock %}
+    

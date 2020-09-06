@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+ <!-- <meta charset="UTF-8">
+  <title>Payment Form</title>
+  <link rel="stylesheet" href="{% static 'pay1.css' %}">
+
+  <link rel='stylesheet' href="{% static 'pay2.css' %}">
+<link rel='stylesheet' href="{% static 'pay3.css' %}">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  !-->
+</head>
+
+<body bgcolor="brown">
+  <br>
+  <br>
+  <div class='container'>
+  <div class='info'>
+    <h1><center>Payment Card<center></h1>
+    <span></span>
+  </div>
+  <br>
+  <!--<form class='modal'>
+    <header class='header'>
+      <h1><center>Payment of {{cost}}</center></h1>
+      <br>
+      <br>
+     <div class='card-type'>
+        <a class='card active' href='#'>
+          <img src="{% static 'Amex.png' %}" style="padding-left: 570px;">
+        </a>
+        <a class='card' href='#'> 
+          <img src="{% static 'Discover.png' %}" style="padding-left: 50px;">
+        </a>
+        <a class='card' href='#'>
+          <img src="{% static 'Visa.png' %}" style="padding-left: 50px;">
+        </a>
+        <a class='card' href='#'>
+          <img src="{% static 'MC.png' %}" style="padding-left: 50px;">
+        </a>
+      </div>
+    </header>
+    <br>
+    <br>!-->
+    <h1><center> Total amount {{cost}}</center></h1>
+    <div class='content'>
+      <div class='form'>
+        <div class='form-row'>
+          <div class='input-group'>
+            <label for='' style="padding-left: 600px;">Name on card</label>
+            <input placeholder='' type='text' style="padding-left: 30px;">
+          </div>
+        </div>
+        <br>
+        <div class='form-row'>
+          <div class='input-group'>
+            <label for=''  style="padding-left: 600px;">Card Number</label>
+            <input maxlength='16' placeholder='' type='number' style="padding-left: 30px;">
+          </div>
+        </div>
+        <br>
+        <div class='form-row'>
+          <div class='input-group'>
+            <label for='' style="padding-left: 600px;">Expiry Date</label>
+            <input placeholder='' type='month'>
+          </div>
+          <br>
+          <div class='input-group'>
+            <label for='' style="padding-left: 600px;">CVV</label>
+            <input maxlenght='4' placeholder='' type='number'>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <footer class='footer'>
+      <center><button class='button'><a href="finalpayment">Complete Payment</a></button></center>
+    </footer>
+  </form>
+</div>
+</center>
+</body>
+
+</html>

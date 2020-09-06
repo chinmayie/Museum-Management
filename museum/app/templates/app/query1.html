@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title ></title>
+</head>
+<body>
+<style>
+table,th,td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+</style>
+<form action="..\query1/" method="post">
+    {% csrf_token %}
+<label>visit date:</label>
+<input type="text" name="visitdate" />
+<input type="submit" name="submit">
+</form>
+<h2>Cost = {{cost.total}}</h2>
+</table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<style type="text/css">
+	body{
+		background-color: 7FFFD4
+	}
+</style>
+<center>
+<br><br>
+<h1> Book Ticket</h1>
+<br><br>
+<form action="after_book" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Book now" />
+    </center>
+</form>

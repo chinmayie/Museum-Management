@@ -1,0 +1,9 @@
+body{
+            background-color: #cccccc;
+            background-image: url("../museum_images/bg7.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }

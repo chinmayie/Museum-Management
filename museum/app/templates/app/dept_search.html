@@ -1,0 +1,33 @@
+{% block content %}
+<center>
+<br><br>
+<style type="text/css">
+  body{
+    background-color: #FAFAD2
+  }table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+  }</style>
+<form method="get">
+    {{ filter.form.as_p}}
+    <button type="submit">Search</button>
+  </form><br><br>
+  <table border="1">
+   <thead>
+    <th>Divid</th>
+    <th>Type</th>
+    <th>Floorno</th>
+    <th>Hallno</th>
+    </tr>
+    </thead>
+    <tbody>
+  {% for divisions in filter.qs %}
+ <tr>  <td> {{divisions.divid}}</td>
+   <td> {{divisions.type}}</td>
+   <td> {{divisions.floorno}}</td>
+   <td>{{divisions.hallno}}</td></tr>
+  {% endfor %}
+  </tbody>
+ </table>
+ </center>
+{% endblock %}

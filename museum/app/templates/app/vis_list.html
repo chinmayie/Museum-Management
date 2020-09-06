@@ -1,0 +1,35 @@
+{% block content %}
+<center><br><br>
+<style type="text/css">
+  body{
+    background-color: #FAFAD2
+  }
+</style>
+<form method="get">
+    {{ filter.form.as_p}}
+    <button type="submit">Search</button>
+    </form><br><br>
+    <style>
+    	table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+    </style>
+ <table>
+ <thead>
+    <th>tranno
+    </th>
+    <th>Cost</th>
+    </tr>
+    </thead>
+    <tbody>
+  {% for  visitors in filter.qs %}
+<tr>
+ <td>   {{visitors.tran_no}}</td> 
+ <td>{{visitors.cost}}</td>
+ </tr>
+  {% endfor %}
+  </tbody>
+  </table>
+  </center>
+{% endblock %}

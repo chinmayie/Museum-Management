@@ -1,0 +1,43 @@
+{% block content %}
+<center><br><br>
+<style type="text/css">
+  body{
+    background-color: #FAFAD2
+  }</style>
+  <h1>Employee list</h1>
+<form method="get">
+    {{ filter.form.as_p}}
+    <button type="submit">Search</button>
+  </form><br><br>
+  <style >
+  table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+  <table>
+  <thead>
+    <th>sid</th>
+    <th>sname</th>
+    <th>job</th>
+    <th>salary</th>
+    <th>Divid</th>
+    <th>Eid</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+  {% for Staff in filter.qs %}
+    <td>{{Staff.sid}}</td>
+    <td>{{Staff.sname}}</td>
+    <td>{{Staff.job}}</td>
+    <td>{{Staff.salary}}</td>
+    <td>{{Staff.divid}}</td>
+    <td>{{Staff.eid}}</td>
+</tr>
+  {% endfor %}
+  </table>
+  </center>
+  </body>
+  {% endblock %}

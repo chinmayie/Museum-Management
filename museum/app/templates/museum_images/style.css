@@ -1,0 +1,346 @@
+ /* .slider-holder
+        {
+            width: 800px;
+            height: 400px;
+            background-color: yellow;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            text-align: center;
+            overflow: hidden;
+        }
+        
+        .image-holder
+        {
+            width: 2400px;
+            background-color: red;
+            height: 400px;
+            clear: both;
+            position: relative;          
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+        }
+        
+        .slider-image
+        {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+        
+        #slider-image-1:target ~ .image-holder
+        {
+            left: 0px;
+        }
+        
+        #slider-image-2:target ~ .image-holder
+        {
+            left: -800px;
+        }
+        
+        #slider-image-3:target ~ .image-holder
+        {
+            left: -1600px;
+        }
+        
+        .button-holder
+        {
+            position: relative;
+            top: -20px;
+        }
+        
+        .slider-change
+        {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 5px;
+            background-color: brown;
+        }
+      container{
+
+
+margin: 0 auto;
+width:500px;
+height:400px;
+border:2px solid black;
+overflow:hidden;
+
+animation:one 35s;
+position:relative;
+background-size:500px 400px;
+transtion:2s ease;
+transtion-delay:2s;
+
+}
+
+@keyframes one{
+0%{background-image:url("img1.jpg");}
+20%{background-image:url("img2.jpg");}
+40%{background-image:url("*img {
+height: 400px;
+width: 800px;
+}
+img {
+height: 400px;
+width: 800px;
+}
+outerbox
+
+{
+width: 800;
+overflow: hiddemargin-left: 300px;
+margin-top: 150px;
+}
+
+sliderbox
+
+{
+position: relative;
+width: 3200px;
+animation: slide 10s infinite;
+}
+
+sliderbox img
+
+{
+float: left;
+}
+
+@keyframes slide
+{
+
+0%
+{
+left: 0px;
+}
+
+20%
+{
+left: 0px;
+}
+
+25%
+{
+left: -800px;
+}
+
+45%
+{
+left: -800px;
+}
+
+50%
+{
+left: -1600px;
+}
+
+70%
+{
+left: -1600px;
+}
+
+75%
+{
+left: -2400px;
+}
+
+95%
+{
+left: -2400px;
+}
+
+100%
+{
+left: -3200px;
+}
+*/
+/*
+img {
+height: 400px;
+width: 800px;
+}
+
+outerbox
+
+{
+width: 800;
+overflow: hidden;
+margin-left: 300px;
+margin-top: 150px;
+}
+
+sliderbox
+
+{
+position: relative;
+width: 3200px;
+animation: slide 10s infinite;
+}
+
+sliderbox img
+
+{
+float: left;
+}
+
+@keyframes slide
+{
+
+0%
+{
+left: 0px;
+}
+
+20%
+{
+left: 0px;
+}
+
+25%
+{
+left: -800px;
+}
+
+45%
+{
+left: -800px;
+}
+
+50%
+{
+left: -1600px;
+}
+
+70%
+{
+left: -1600px;
+}
+
+75%
+{
+left: -2400px;
+}
+
+95%
+{
+left: -2400px;
+}
+
+100%
+{
+left: -3200px;
+}*/
+
+img {
+    width: 100px;
+    height: 350px;
+    object-fit: cover;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+@keyframes slider {
+
+0% {
+    left: 0;
+}
+
+20% {
+    left: 0;
+}
+
+25% {
+    left: -100%;
+}
+
+45% {
+    left: -100%;
+
+}
+
+50% {
+        left: -200%;
+
+}
+
+70% {
+    left: -200%;
+}
+
+75% {
+    left: -300%;
+}
+
+95% {
+    left: -300%;
+}
+
+100% {
+    left: -300%;
+
+}
+
+}
+#container{
+    width: 800px;
+    overflow: hidden;
+    margin: 20px auto;
+
+}
+#slider {
+    overflow: hidden;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+#slider figure {
+    position: relative;
+    width: 4000px;
+    margin: 0px auto;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 20s slider infinite; 
+
+ 
+}
+  html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #cccccc;
+            background-image: url("background.jpg");
+        }

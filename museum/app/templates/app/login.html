@@ -1,0 +1,15 @@
+<html
+<head><link rel="stylesheet" type="text/css" href="../../static/proj/login.css" /></head>
+<center>
+<h2>Login</h2>
+<body>
+<font color="red" size="5">
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+   <button type="submit">Login</button>
+</form>
+</center>
+</font>
+</body>
+</html>

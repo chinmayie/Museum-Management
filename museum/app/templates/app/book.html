@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book ticket</title>
+</head>
+<body>
+<center><h1>Hello you are in ticket booking page</h1></center>
+<center><h2>please note: There wont be any ticket cost for children less than 5 years</h2></center>
+
+<form action="" method="POST">
+<div>
+<center>
+	<b><label class="label">visit date&nbsp;&nbsp;&nbsp;&nbsp;</label></b>
+	<input type="text" required name="date" required value={{date}}>
+      <br>(YYYY-MM-DD)<br><br>
+     <b> <label class="label">phone number</label></b>
+      <input type="number" name="number"><br><br>
+	<b><label class="label">number of tickets(age 5-10)</label></b>
+	<input type="text" required name="number"><br><br>
+	<b><label class="label">number of tickets(age>10)</label></b>
+	<input type="text" required name="number"><br><br>
+	<b><label class="label">Nationality&nbsp;&nbsp;&nbsp;&nbsp; </label></b>&nbsp;&nbsp;
+Indian 	<input type="radio" name="options" id="Indian" value="Indian">
+other	<input type="radio" name="options" id="other" value="other"><br><br><br>
+    <input type="button" name="Book tickets" value="Book tickets">
+
+    </form>
+</center>
+</div>
+<center>
+<br><br><br>
+<p>The ticket cost is as follows :<br></p>
+<p>For children between 5-10 yrs 20 per ticket</p>
+<p>For others 50 per ticket</p>
+<p>For non Indian additional 50 per ticket</p>
+</center>
+</body>
+</html>

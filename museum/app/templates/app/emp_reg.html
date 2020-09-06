@@ -1,0 +1,10 @@
+<style type="text/css">
+	body{
+		background-color: #F5F5F5
+	}
+</style>
+<form action=" " method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+</form>

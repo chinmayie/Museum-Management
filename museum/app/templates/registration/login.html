@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<font color="cyan" size="5">
+<h2 >Admin Login</h2>
+<link rel="stylesheet" type="text/css" href="../../static/app/login.css" />
+<body>
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+   <button type="submit">Login</button>
+</form>
+</body>
+</font>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% block content %}
+<center>
+<br><br>
+<h1> Exhibition list</h1>
+<style type="text/css">
+  body{
+    background-color: #FAFAD2
+  }
+  table,th,td{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  </style>
+<form method="get">
+    {{ filter.form.as_p}}
+    <button type="submit">Search</button>
+  </form>
+  <br><br>
+  <table>
+  <thead>
+  <th>Eid</th>
+    <th>Type</th>
+    <th>startdate</th>
+    <th>Endddate</th>
+    </tr>
+    </thead>
+    <tbody>
+  {% for exhibition in filter.qs %}
+  <tr>
+  <td>{{exhibition.eid}}</td>
+    <td>{{exhibition.etype}}</td>
+    <td>{{exhibition.startdate}}</td>
+    <td>{{exhibition.enddate}}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</center>
+{% endblock %}
