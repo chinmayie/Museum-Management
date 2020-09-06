@@ -1,0 +1,5 @@
+1. To run the project , create virtual environment\
+2. Activate virtual environment
+3. Install django django-admin startproject projectname
+4.python manage.py startapp applicationname to create new project 
+5. python manage.py run server to run the server .
